@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  bootstrap link -->
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css"/>
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <!-- sweetalert link -->
+    <script src="../common/js/sweetalert.min.js"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../common/css/animate.min.css" />
+    <!-- font awesomelink -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/admin.css" />
+    <title>Admin-Panel</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="side-nav side-nav-open">
+        <button
+          access-link="dynamic/branding_design.html"
+          class="active collapse-item btn text-white w-100 fw-bold"
+          style="font-size: 20px"
+        >
+          <i class="fa fa-image float-start mt-2"></i>
+          Branding Details
+        </button>
+        <button
+          class="btn text-white w-100 fw-bold collapse-btn"
+          style="font-size: 20px"
+        >
+          <i class="fa fa-shopping-cart float-start mt-2"></i>
+          Stocks Update
+          <i class="fa fa-angle-down float-end mt-2"></i>
+        </button>
+        <ul class="collapse show">
+          <li
+            access-link="dynamic/cat_design.html"
+            class=" collapse-item list-group-item border-0 border-start text-white bg-transparent"
+          >
+            Create Category
+          </li>
+          <li
+            access-link="dynamic/brand_design.html"
+            class=" collapse-item list-group-item border-0 border-start text-white bg-transparent"
+          >
+            Create Brand
+          </li>
+          <li
+            access-link="dynamic/product_design.html"
+            class="collapse-item list-group-item border-0 border-start text-white bg-transparent"
+          >
+            Create Product
+          </li>
+        </ul>
+      </div>
+      <div class="page page-open">
+        
+      </div>
+    </div>
+
+    <script src="./js/admin.js"></script>
+    <script src="../common/js/common.js"></script>
+  </body>
+</html>
+
+

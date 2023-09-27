@@ -1,0 +1,126 @@
+<nav class="navbar shadow-sm bg-white">
+    <button class="btn toggler-btn">
+        <i class="fa fa-align-left"></i>
+    </button>
+</nav>
+<div class="row p-4 animate__animated animate__slideInDown">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 bg-white shadow-sm p-4">
+        <h5>
+            CREATE PRODUCT
+            <i class="fa-solid fa-arrows-rotate float-end"></i>
+        </h5>
+        <form class="product-form">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option value="choose category">Choose Category</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option value="choose brand">Choose Brand</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Nokia-1100" class="form-control" />
+                </div>
+            </div>
+            <label for="description">Discription</label>
+            <textarea rows="10" class="form-control mb-3" placeholder="Description"></textarea>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Price" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Quantity" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 text-center bg-info text-white mx-1 p-3">
+                    <input type="file" class="form-control mb-2" />
+                    <i class="fa-solid fa-camera-retro" style="font-size: 35px"></i>
+                    <h6>Thumb</h6>
+                    <p>250*316</p>
+                </div>
+                <div class="col-md-2 text-center bg-info text-white mx-1 p-3">
+                    <input type="file" class="form-control mb-2" />
+                    <i class="fa-solid fa-camera-retro" style="font-size: 35px"></i>
+                    <h6>Front</h6>
+                    <p>250*316</p>
+                </div>
+                <div class="col-md-2 text-center bg-info text-white mx-1 p-3">
+                    <input type="file" class="form-control mb-2" />
+                    <i class="fa-solid fa-camera-retro" style="font-size: 35px"></i>
+                    <h6>Back</h6>
+                    <p>250*316</p>
+                </div>
+                <div class="col-md-2 text-center bg-info text-white mx-1 p-3">
+                    <input type="file" class="form-control mb-2" />
+                    <i class="fa-solid fa-camera-retro" style="font-size: 35px"></i>
+                    <h6>Right</h6>
+                    <p>250*316</p>
+                </div>
+                <div class="col-md-2 text-center bg-info text-white mx-1 p-3">
+                    <input type="file" class="form-control mb-2" />
+                    <i class="fa-solid fa-camera-retro" style="font-size: 35px"></i>
+                    <h6>Left</h6>
+                    <p>250*316</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <button class="btn btn-primary m-2 mx-2 float-end">Create Product</button>
+            <button type="button" class="btn btn-danger m-2 mx-2 d-none float-end">
+                Update Product
+            </button>
+        </form>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div class="row p-4 animate__animated animate__slideInDown">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 bg-white shadow-sm p-4">
+        <h5>
+            Product List
+            <i class="fa-solid fa-arrows-rotate float-end"></i>
+        </h5>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <select class="cat-list-select form-select">
+                    <option value="choose category">Choose Ctaegory</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <select class="brand-list-select form-select">
+                    <option value="choose brand">Choose Brand</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>SR.</th>
+                            <th>Category</th>
+                            <th>Brand</th>
+                            <th>Name</th>
+                            <th>Discription</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Thumb</th>
+                            <th>Front</th>
+                            <th>Back</th>
+                            <th>Right</th>
+                            <th>Left</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="product-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  bootstrap link -->
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css"/>
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <!-- sweetalert link -->
+    <script src="../common/js/sweetalert.min.js"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../common/css/animate.min.css" />
+    <!-- font awesomelink -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- custom css -->
+    <title>Admin-Panel</title>
+  </head>
+  <body>
+
+    <!-- start navbar coding -->
+     <div class="navbar-box">
+
+     </div>
+
+  <!-- start main page coding -->
+   <div class="container bg-white p-4 shadow-sm mt-4 mb-4">
+   <h3 class="text-center fw-bold mb-5">About us</h3>
+   <hr>
+   <div class="about-box">
+
+   </div>
+
+   </div>
+  
+  
+   <!--Start footer -->
+    <div class="footer-box">
+
+    </div>
+
+  <script src="../common/js/common.js"></script>
+     <script src="../js/dynamic.js"></script>
+
+     <script>
+        const navbarBox = document.querySelector(".navbar-box");
+        const footerBox = document.querySelector(".footer-box");
+        const aboutBox = document.querySelector(".about-box");
+        dynamicRequest(navbarBox,"nav.html");
+        dynamicRequest(footerBox,"footer.html");
+
+     </script>
+  </body>
+</html>
